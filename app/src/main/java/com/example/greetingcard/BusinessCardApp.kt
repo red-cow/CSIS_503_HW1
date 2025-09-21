@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -98,6 +99,9 @@ private fun BottomCard(
 
     Column {
         Row {
+            Image(painter = painterResource(R.drawable.phone_icon), contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp))
             Text(
                 text = phone,
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp),
@@ -105,6 +109,9 @@ private fun BottomCard(
             )
         }
         Row {
+            Image(painter = painterResource(R.drawable.twitterlogo), contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp))
             Text(
                 text = social,
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp),
@@ -112,6 +119,9 @@ private fun BottomCard(
             )
         }
         Row {
+            Image(painter = painterResource(R.drawable.email), contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp))
             Text(
                 text = email,
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp),
